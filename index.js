@@ -42,12 +42,13 @@ const env = async () => {
     let addProduct = await manager.addProduct(product1);
     let addProduct1 = await manager.addProduct(product2);
     let addProduct2 = await manager.addProduct(product3);
+    console.log(addProduct2);
     let addProduct3 = await manager.addProduct(product4);
 
     let getProducts = await manager.getProducts();
     console.log(getProducts);
 
-    let getProductById = await manager.getProductsById(2);
+    let getProductById = await manager.getProductsById(3);
     console.log(getProductById);
 
     let updatedProduct = await manager.updateProduct(2, "nutella", "500gr", 1200, "No image", 153, 12);

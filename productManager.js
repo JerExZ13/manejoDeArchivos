@@ -41,7 +41,7 @@ export default class ProductManager {
     getProductsById = async (id) => {
         let products = await this.getProducts();
         try {
-            const product = products.find(id => products.id === id);
+            const product = products.find(product => product.id === id);
             return product ? product : null;
         } catch (err) {
             console.log(`error: ${err}`);
@@ -81,6 +81,7 @@ export default class ProductManager {
             const newProducts = products.filter(prod => prod.id != id)
             await fs.promises.writeFile(this.path, JSON.stringify(newProducts, null, '\t'));
             return newProducts;
+            products = [...newProducts]
         }
     };
 }
