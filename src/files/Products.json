@@ -24,23 +24,5 @@
 		"code": 654,
 		"stock": 23,
 		"id": 4
-	},
-	{
-		"title": "Mantecol",
-		"description": "Tamaño familiar",
-		"price": 600,
-		"thumbnail": "No Image",
-		"code": 456,
-		"stock": 23,
-		"id": 5
-	},
-	{
-		"title": "Mantecol",
-		"description": "Tamaño familiar",
-		"price": 600,
-		"thumbnail": "No Image",
-		"code": 789,
-		"stock": 23,
-		"id": 6
 	}
 ]
